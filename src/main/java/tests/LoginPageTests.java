@@ -14,6 +14,7 @@ public class LoginPageTests {
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://katalon-demo-cura.herokuapp.com/profile.php#login");
         loginPage = new LoginPage(driver);
     }

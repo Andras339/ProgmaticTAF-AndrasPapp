@@ -12,6 +12,7 @@ public class AppointmentPageTests {
     @BeforeMethod
     public void setup() {
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://katalon-demo-cura.herokuapp.com/");
         appointmentPage = new AppointmentPage(driver);
     }
